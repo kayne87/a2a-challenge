@@ -22,12 +22,22 @@ Thanks goes to these wonderful people <img src="https://cdn1.iconfinder.com/data
 
 # Prerequisites
 
-In order to execute all scripts in this repository you need python with ortools and scikit learns packages. The EqualSize KMeans implementation is imported by the following github repository: **ndanielsen/Same-Size-K-Means**, the suggested version of scikit learn to install is 18.X, we successfully tested it with the version 21.X
+In order to execute all scripts in this repository you need python with ortools and scikit learns packages. The EqualSize KMeans implementation is imported by the following github repository: [ndanielsen/Same-Size-K-Means](https://github.com/ndanielsen/Same-Size-K-Means), the suggested version of scikit learn to install is 18.X, we successfully tested it with the version 21.X
 
 ```sh
     $ pip install ortools
     $ pip install 'scikit-learn>=0.18.0,<=0.21.3'
 ```
+
+# Repo structure
+
+- **input folder** : follow the instructions inside this folder. Important input source for the data preparation and clustering algorithms
+- **output folder** : 
+    - **data-preparation**: all the results of the data preparation step. In this step a python script executes the split division between vehicles turns and creates first_visit.<YYYYmmdd>.csv and second_visit.<YYYYmmdd>.csv
+    - **clustering**: all the results of a clustering execution are organized in files, whose prefix is the name of the algorithm concatenated with the number of cluster produced.
+- **root folder** : file names **a2a_*** indicate our custom python modules used by the Python Notebooks and serve features in different areas:
+    - **a2a_clustering**: executes dataframe transformation for the scikit-learn training models, computes clusters centroids and contains a custom implementation of the Sweep Algorithm (a clustering based on the polar angles started from the DEPOT)
+    - **a2a_validation**: executes the silhouette coefficent for each observation in the clusterized dataframe and computes the coefficent average between all clusters. All the results are presented in form of a graph splitted in two sections: silhouette trend and a 2D representation of the clustering. [Inspired solution from scikit-learn documentation](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html)
 
 # Distance matrix
 
@@ -48,3 +58,7 @@ We used the Google ORTools for the TSP computation and the implementation reside
  - total time of emptying (which time is needed to execute all the computed path plus 60seconds for each bins)
  - number of bins
  - TOTALS and AVERAGE for all stats
+
+# Routing Engine and Map
+
+Using the 
