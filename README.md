@@ -85,4 +85,4 @@ In the following snippet, from ./routing_map/index.js, you have to replace the *
     var counter = 0
 ```
 
-In the output/route we have uploaded 4 paths created in this way.
+In the output/route folder we have uploaded 4 paths created in this way.
