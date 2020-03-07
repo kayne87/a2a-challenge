@@ -75,7 +75,7 @@ After this container installation and using the waypoints given from the TSP pro
 
 # Configure the Routing Engine with a custom map
 
-In the following snippet, from ./routing_map/index.js, you have replace the **waypointsRaw** variable content with any waypoints result from the tsp csv results and have a OSRM in listening in port 5000, you can configure even this from the same script.
+In the following snippet, from ./routing_map/index.js, you have to replace the **waypointsRaw** variable content with any waypoints results from the tsp csv files and have an OSRM listening on port 5000, you can configure even this from the same script.
 
 ```js
     var waypointsRaw = [{"serial": -1, "coords": [45.5069182, 9.2684501]},...{...}];
