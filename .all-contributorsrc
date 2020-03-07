@@ -1,6 +1,6 @@
 {
   "projectName": "a2a-challange",
-  "projectOwner": "a2a-challange",
+  "projectOwner": "kayne87",
   "files": [
     "README.md"
   ],
@@ -16,6 +16,15 @@
         "doc",
         "review",
         "talk"
+      ]
+    },
+    {
+      "login": "kayne87",
+      "name": "Marco Distrutti",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5654001?v=4",
+      "profile": "https://github.com/kayne87",
+      "contributions": [
+        "code"
       ]
     }
   ],
