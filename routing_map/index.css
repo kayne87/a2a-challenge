@@ -21,3 +21,13 @@ html {
     height: 480px;
     overflow-y: scroll;
 }
+
+
+.leaflet-routing-alt {
+	max-height:9999px;
+	height:800px;
+}
+
+.leaflet-routing-geocoders {
+	display:none;
+}
