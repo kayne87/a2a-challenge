@@ -31,11 +31,12 @@ In order to execute all scripts in this repository you need python with ortools 
 
 # Repo structure
 
-- **input folder** : follow the instructions inside this folder. Important input source for the data preparation and clustering algorithms
-- **output folder** : 
+- **input folder**: follow the instructions inside this folder. Important input source for the data preparation and clustering algorithms
+- **output folder**: 
     - **data-preparation**: all the results of the data preparation step. In this step a python script executes the split division between vehicles turns and creates first_visit.<YYYYmmdd>.csv and second_visit.<YYYYmmdd>.csv
-    - **clustering**: all the results of a clustering execution are organized in files, whose prefix is the name of the algorithm concatenated with the number of cluster produced.
-- **root folder** : 
+    - **clustering**: all the results of a clustering execution are organized in files, whose prefix is the name of the algorithm concatenated with the number of cluster produced, for each clustering results the produced files are a clustered dataframe, centroids csv, tsp result statistics (with the waypoints to use in the map) and silhouette coefficent.
+- **plot**: contains combined results of clusters of size from 15 to 20 for each clustering algorithm.
+- **root folder**: 
     - file names **a2a_*** indicate our custom python modules used by the Python Notebooks and serve features in different areas:
         - **a2a_clustering**: executes dataframe transformation for the scikit-learn training models, computes clusters centroids and contains a custom implementation of the Sweep Algorithm (a clustering based on the polar angles started from the DEPOT)
         - **a2a_validation**: executes the silhouette coefficent for each observation in the clusterized dataframe and computes the coefficent average between all clusters. All the results are presented in form of a graph splitted in two sections: silhouette trend and a 2D representation of the clustering. [Inspired solution from scikit-learn documentation](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html)
@@ -83,3 +84,5 @@ In the following snippet, from ./routing_map/index.js, you have to replace the *
     var waypoints = []
     var counter = 0
 ```
+
+In the output/route we have uploaded 4 paths created in this way.
