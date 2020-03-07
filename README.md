@@ -3,8 +3,22 @@
 The content of this repository is part of a project submitted for a challenge organized by A2A Group, the italian multiutiliy leader, that aims to find a good way in order to manage turns of a fleet of vehicles for the trash cleaning.
 In order to reach our objectives we followed the strategy of **Cluster-first** - **Route-second** for the Vehicle Routing Problem, VRP, wich executes a 2-steps solutions. In the first step we made a Geo-Spatial Clustering and for the second step a Routing optimization using the Travelling Salesman Problem, TSP, solution. TSP is a semplification of the VRP and it allows us to tract the VRP in a more suitable way, from the computational point of view.
 
-# Contributors
-
+# Contributors 
+Thanks goes to these wonderful people <img src="https://cdn1.iconfinder.com/data/icons/addiction-drugs-2/24/addiction_Coffee_1-24.png" />
+<table>
+    <tr>
+        <td>Bryan Christian Murrone</td>
+        <td><img src="https://cdn3.iconfinder.com/data/icons/technology-1-1/512/technology-machine-electronic-device-23-16.png"/> ideas, clustering validation</td>
+    </tr>
+    <tr>
+        <td>Marco Distrutti</td>
+        <td><img src="https://cdn2.iconfinder.com/data/icons/business-process-1/512/epc-16.png"/> coding, algorithms, routing engine</td>
+    </tr>
+    <tr>
+        <td>Santosh Anand</td>
+        <td><img src="https://cdn2.iconfinder.com/data/icons/miscellaneous-37/100/improving_quality_chart-16.png"/> coding, results reviewer</td>
+    </tr>
+</table>
 
 # Prerequisites
 
@@ -12,7 +26,7 @@ In order to execute all scripts in this repository you need python with ortools 
 
 ```sh
     $ pip install ortools
-    $ pip install 'scikit-learn>0.18.0,<=0.21.3'
+    $ pip install 'scikit-learn>=0.18.0,<=0.21.3'
 ```
 
 # Distance matrix
