@@ -68,3 +68,7 @@ We used the Google ORTools for the TSP computation and the implementation reside
 For the "Routes on Map" activity we used the OSRM Routing Engine configured in the same way we created the distance matrix. A very usefull docker container which saves our time was the [osrm-backend](https://hub.docker.com/r/osrm/osrm-backend/) runned with the Contraction Hierarchies technique on the data provided by [GeoFabrik Open StreetMap datasource](https://download.geofabrik.de/europe/italy.html).
 
 After this container installation and using the waypoints given from the TSP produced Dataframe is very simple to render the routes on the map. We used **Leaflet Routing Machine** for the frontend renderization.
+
+<img src="https://github.com/kayne87/a2a-challange/blob/master/output/routes/path.PNG?raw=true" />
+
+<img src="https://github.com/kayne87/a2a-challange/blob/master/output/routes/path_with_directions.png?raw=true" />
