@@ -1,6 +1,7 @@
-# A2A Challange
+# A2A Challange - An Introduction
 
-Machine Learning Project
+The content of this repository is part of a project submitted for a challenge organized by A2A Group, the italian multiutiliy leader, that aims to find a good way in order to manage turns of a fleet of vehicles for the trash cleaning.
+In order to reach our objectives we followed the strategy of **Cluster-first** - **Route-second** for the Vehicle Routing Problem, VRP, wich executes a 2-steps solutions. In the first step we made a Geo-Spatial Clustering and for the second step a Routing optimization using the Travelling Salesman Problem, TSP, solution. TSP is a semplification of the VRP and it allows us to tract the VRP in a more suitable way, from the computational point of view.
 
 # Prerequisites
 
@@ -10,11 +11,6 @@ In order to execute all scripts in this repository you need python with ortools 
     $ pip install ortools
     $ pip install 'scikit-learn>0.18.0,<=0.21.3'
 ```
-
-# Introduction - The Challeng
-
-The content of this repository is part of a project submitted for a challenge organized by A2A Group, the italian multiutiliy leader, that aims to find a good way in order to manage turns of a fleet of vehicles for the trash cleaning.
-In order to reach our objectives we followed the strategy of **Cluster-first** - **Route-second** for the Vehicle Routing Problem, VRP, wich executes a 2-steps solutions. In the first step we made a Geo-Spatial Clustering and for the second step a Routing optimization using the Travelling Salesman Problem, TSP, solution. TSP is a semplification of the VRP and it allows us to tract the VRP in a more suitable way, from the computational point of view.
 
 # Distance matrix
 
