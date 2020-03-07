@@ -72,3 +72,14 @@ After this container installation and using the waypoints given from the TSP pro
 <img src="https://github.com/kayne87/a2a-challange/blob/master/output/routes/path.PNG?raw=true" />
 
 <img src="https://github.com/kayne87/a2a-challange/blob/master/output/routes/path_with_directions.png?raw=true" />
+
+# Configure the Routing Engine with a custom map
+
+In the following snippet, from ./routing_map/index.js, you have replace the **waypointsRaw** variable content with any waypoints result from the tsp csv results and have a OSRM in listening in port 5000, you can configure even this from the same script.
+
+```js
+    var waypointsRaw = [{"serial": -1, "coords": [45.5069182, 9.2684501]},...{...}];
+    L.tileLayer.provider('Hydda.Full')
+    var waypoints = []
+    var counter = 0
+```
